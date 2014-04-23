@@ -1,0 +1,7 @@
+Basic process is working, starts and forks of as a daemon.
+1. Make entry in /var/run with it's PID.
+2. Check for another instance running.
+3. Respect any /var/lock for files or devices where applicable.
+4. Should respond to SIGHUP or SIGTERM see http://www.gnu.org/software/libc/manual/html_node/Termination-Signals.html for details.
+5. Consider writing to a log file.
+
